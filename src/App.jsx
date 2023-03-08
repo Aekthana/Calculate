@@ -62,11 +62,15 @@ function App() {
 
 
 const Container = styled.div`
-  width: 40%;
+  max-width: 400px;
+  width: 50%;
   margin: 5em auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
+  @media screen and (max-width: 500px) {
+      width: 90%;
+    }
 `
 const Display = styled.div`
   width: 100%;
